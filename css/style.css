@@ -49,23 +49,6 @@ body {
   gap: 12px;
 }
 
-#random-btn {
-  background: var(--bg-primary);
-  border: 1px solid var(--border);
-  color: var(--text-primary);
-  padding: 7px 14px;
-  border-radius: 20px;
-  font-size: 13px;
-  cursor: pointer;
-  transition: border-color 0.2s, background 0.2s;
-  white-space: nowrap;
-}
-
-#random-btn:hover {
-  border-color: var(--accent);
-  background: var(--bg-secondary);
-}
-
 #search-container {
   position: relative;
 }

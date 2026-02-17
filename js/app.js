@@ -12,11 +12,6 @@ document.addEventListener("DOMContentLoaded", function() {
     UIController.closePanel();
   });
 
-  // Random maxim button
-  document.getElementById("random-btn").addEventListener("click", function() {
-    gc.randomMaxim();
-  });
-
   // Search with debounce
   var searchInput = document.getElementById("search-input");
   var searchTimeout;
