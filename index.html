@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Art of Worldly Wisdom — Thematic Graph</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://unpkg.com/vis-network@9.1.9/standalone/umd/vis-network.min.js"></script>
+</head>
+<body>
+  <header id="header">
+    <div id="header-left">
+      <h1>The Art of Worldly Wisdom</h1>
+      <p class="subtitle">Baltasar Gracián — 300 Maxims, Connected by Theme</p>
+    </div>
+    <div id="header-right">
+      <div id="search-container">
+        <input type="text" id="search-input" placeholder="Search maxims…">
+        <span id="search-count"></span>
+      </div>
+    </div>
+  </header>
+
+  <div id="theme-filters"></div>
+
+  <main id="main">
+    <div id="graph-container"></div>
+    <aside id="detail-panel" class="collapsed">
+      <button id="close-panel">&times;</button>
+      <h2 id="detail-numeral"></h2>
+      <h3 id="detail-title"></h3>
+      <div id="detail-themes"></div>
+      <div id="detail-body"></div>
+      <h4 id="connections-header">Connected Maxims</h4>
+      <div id="detail-connections"></div>
+    </aside>
+  </main>
+
+  <div id="loading-overlay">
+    <div id="loading-content">
+      <div id="loading-spinner"></div>
+      <div id="loading-text">Loading graph…</div>
+    </div>
+  </div>
+
+  <footer id="legend"></footer>
+
+  <script src="js/graph-config.js"></script>
+  <script src="js/ui-controller.js"></script>
+  <script src="js/graph-controller.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
