@@ -177,3 +177,9 @@ GraphController.prototype.search = function(query) {
 
   return matches;
 };
+
+GraphController.prototype.randomMaxim = function() {
+  var ids = this.allNodes.getIds();
+  var randomId = ids[Math.floor(Math.random() * ids.length)];
+  this.focusNode(randomId);
+};
